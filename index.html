@@ -2,58 +2,38 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>정림의 백엔드 공부 기록</title>
+  <title>Study Log</title>
+
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f7f9fc;
-      color: #333;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
     }
 
     header {
-      background-color: #2d3e50;
+      background-color: #222;
       color: white;
-      padding: 20px;
+      padding: 15px;
       text-align: center;
     }
 
-    nav {
-      background-color: #ffffff;
-      padding: 15px;
-      border-bottom: 1px solid #ddd;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #2d3e50;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #007acc;
-    }
-
     .container {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 20px;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 15px;
     }
 
-    .card {
+    .post {
       background: white;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
     }
 
-    .card h2 {
-      margin-top: 0;
-      color: #2d3e50;
+    .post h2 {
+      margin: 0 0 5px 0;
+      font-size: 18px;
     }
 
     .date {
@@ -61,93 +41,30 @@
       color: #888;
       margin-bottom: 10px;
     }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 12px;
-      color: #aaa;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #e6f0ff;
-      color: #007acc;
-      padding: 5px 10px;
-      border-radius: 8px;
-      font-size: 12px;
-      margin-right: 5px;
-    }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>📚 정림의 백엔드 공부 기록</h1>
-  <p>MySQL · Java · DAO · 팀프로젝트 정리</p>
+  <h1>Study Log</h1>
 </header>
-
-<nav>
-  <a href="#">전체</a>
-  <a href="#">MySQL</a>
-  <a href="#">Java</a>
-  <a href="#">프로젝트</a>
-</nav>
 
 <div class="container">
 
-  <!-- 글 1 -->
-  <div class="card">
-    <h2>CRUD 개념 정리</h2>
-    <div class="date">2026-03-17</div>
-
-    <div>
-      <span class="tag">MySQL</span>
-      <span class="tag">기초</span>
-    </div>
-
-    <p>
-      CRUD는 Create, Read, Update, Delete의 약자이다.<br>
-      데이터베이스에서 가장 기본이 되는 동작이다.
-    </p>
+  <div class="post">
+    <h2>제목</h2>
+    <div class="date">날짜</div>
+    <p>내용 작성</p>
   </div>
 
-  <!-- 글 2 -->
-  <div class="card">
-    <h2>DAO 패턴 이해하기</h2>
-    <div class="date">2026-03-17</div>
-
-    <div>
-      <span class="tag">Java</span>
-      <span class="tag">Backend</span>
-    </div>
-
-    <p>
-      DAO는 DB 접근을 담당하는 객체이다.<br>
-      SQL 실행과 ResultSet 처리를 담당한다.
-    </p>
-  </div>
-
-  <!-- 글 3 -->
-  <div class="card">
-    <h2>LMS 프로젝트 - 수강신청 기능</h2>
-    <div class="date">2026-03-17</div>
-
-    <div>
-      <span class="tag">Project</span>
-    </div>
-
-    <p>
-      전공 / 교양 선택 후 과목을 조회하고,<br>
-      선택한 과목을 수강 테이블에 INSERT하는 기능 구현 중.
-    </p>
+  <div class="post">
+    <h2>제목</h2>
+    <div class="date">날짜</div>
+    <p>내용 작성</p>
   </div>
 
 </div>
-
-<footer>
-  © 2026 정림 | Backend Study Log
-</footer>
 
 </body>
 </html>
