@@ -8,14 +8,22 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      background: #f5f5f5;
     }
 
     header {
-      background-color: #222;
+      background: #222;
       color: white;
       padding: 15px;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
     }
 
     .container {
@@ -29,17 +37,26 @@
       padding: 15px;
       margin-bottom: 15px;
       border: 1px solid #ddd;
+      cursor: pointer;
     }
 
-    .post h2 {
-      margin: 0 0 5px 0;
-      font-size: 18px;
+    .hidden {
+      display: none;
     }
 
-    .date {
-      font-size: 12px;
-      color: #888;
+    input {
+      display: block;
+      width: 100%;
       margin-bottom: 10px;
+      padding: 8px;
+    }
+
+    button {
+      padding: 8px 12px;
+      background: #222;
+      color: white;
+      border: none;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -47,24 +64,55 @@
 <body>
 
 <header>
-  <h1>Study Log</h1>
+  <div>Study Log</div>
+  <nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('login')">Login</a>
+  </nav>
 </header>
 
 <div class="container">
 
-  <div class="post">
-    <h2>제목</h2>
-    <div class="date">날짜</div>
-    <p>내용 작성</p>
+  <!-- HOME -->
+  <div id="home">
+    <div class="post" onclick="showDetail('글 제목', '내용입니다')">
+      <h3>글 제목</h3>
+      <p>간단한 내용</p>
+    </div>
   </div>
 
-  <div class="post">
-    <h2>제목</h2>
-    <div class="date">날짜</div>
-    <p>내용 작성</p>
+  <!-- LOGIN -->
+  <div id="login" class="hidden">
+    <h2>Login</h2>
+    <input type="text" placeholder="아이디">
+    <input type="password" placeholder="비밀번호">
+    <button onclick="alert('로그인 기능은 아직 구현 전')">로그인</button>
+  </div>
+
+  <!-- DETAIL -->
+  <div id="detail" class="hidden">
+    <h2 id="detail-title"></h2>
+    <p id="detail-content"></p>
+    <button onclick="showPage('home')">뒤로가기</button>
   </div>
 
 </div>
+
+<script>
+  function showPage(page) {
+    document.getElementById('home').classList.add('hidden');
+    document.getElementById('login').classList.add('hidden');
+    document.getElementById('detail').classList.add('hidden');
+
+    document.getElementById(page).classList.remove('hidden');
+  }
+
+  function showDetail(title, content) {
+    document.getElementById('detail-title').innerText = title;
+    document.getElementById('detail-content').innerText = content;
+    showPage('detail');
+  }
+</script>
 
 </body>
 </html>
