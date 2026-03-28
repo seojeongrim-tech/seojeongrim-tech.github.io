@@ -14,87 +14,21 @@
             --text-sub: #5a6c7d;
             --border: #e1e8ed;
         }
-        body { 
-            font-family: 'Noto Sans KR', sans-serif; 
-            background-color: var(--bg); 
-            color: var(--text-main); 
-            line-height: 1.7; 
-            padding: 40px 20px;
-            margin: 0;
-        }
-        .container { max-width: 850px; margin: 0 auto; }
-        .back-btn { 
-            text-decoration: none; 
-            color: var(--text-sub); 
-            font-weight: 500; 
-            display: inline-block; 
-            margin-bottom: 30px; 
-            padding: 10px 20px;
-            background: #fff;
-            border: 1px solid var(--border);
-            border-radius: 50px;
-            transition: all 0.2s;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
+        body { font-family: 'Noto Sans KR', sans-serif; background-color: var(--bg); color: var(--text-main); line-height: 1.7; padding: 40px 20px; margin: 0; }
+        .container { max-width: 900px; margin: 0 auto; }
+        .back-btn { text-decoration: none; color: var(--text-sub); font-weight: 500; display: inline-block; margin-bottom: 30px; padding: 10px 20px; background: #fff; border: 1px solid var(--border); border-radius: 50px; transition: all 0.2s; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .back-btn:hover { background: #f0f0f0; transform: translateX(-3px); }
-        
         h1 { font-size: 2.2rem; margin-bottom: 10px; text-align: center; color: #1a1a1a; }
         .subtitle { text-align: center; color: var(--text-sub); margin-bottom: 50px; font-size: 1.1rem; }
-
-        /* 직무 카드 스타일 */
-        .job-card { 
-            background: var(--card-bg); 
-            border-radius: 16px; 
-            padding: 35px; 
-            margin-bottom: 35px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
-            border: 1px solid var(--border);
-        }
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            border-bottom: 2px solid #f8f9fa;
-            padding-bottom: 15px;
-            margin-bottom: 25px;
-        }
-        .job-title { 
-            font-size: 1.5rem; 
-            font-weight: 700; 
-            color: var(--primary); 
-            margin: 0;
-        }
-        .job-tag {
-            background: #eef4ff;
-            color: var(--primary);
-            padding: 4px 12px;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
-        .info-row { margin-bottom: 15px; display: flex; }
-        .label { 
-            font-weight: 700; 
-            width: 140px; 
-            color: #4a5568; 
-            flex-shrink: 0;
-            font-size: 0.95rem;
-        }
+        .job-card { background: var(--card-bg); border-radius: 16px; padding: 35px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.04); border: 1px solid var(--border); }
+        .job-header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #f8f9fa; padding-bottom: 15px; margin-bottom: 25px; }
+        .job-title { font-size: 1.5rem; font-weight: 700; color: var(--primary); margin: 0; }
+        .job-tag { background: #eef4ff; color: var(--primary); padding: 4px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; }
+        .info-row { margin-bottom: 12px; display: flex; }
+        .label { font-weight: 700; width: 150px; color: #4a5568; flex-shrink: 0; font-size: 0.95rem; }
         .content { flex: 1; color: #2d3748; font-size: 1rem; }
-        .tech-box { 
-            background: #f1f3f5; 
-            padding: 15px; 
-            border-radius: 8px; 
-            margin-top: 10px;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 0.9rem;
-            color: #444;
-        }
-        @media (max-width: 600px) {
-            .info-row { flex-direction: column; }
-            .label { width: 100%; margin-bottom: 5px; }
-            .job-header { flex-direction: column; gap: 10px; }
-        }
+        .tech-box { background: #f8f9fa; padding: 15px; border-radius: 8px; margin-top: 10px; font-family: 'Consolas', monospace; font-size: 0.95rem; color: #333; border-left: 4px solid var(--primary); }
+        @media (max-width: 600px) { .info-row { flex-direction: column; } .label { width: 100%; margin-bottom: 5px; } .job-header { flex-direction: column; gap: 10px; } }
     </style>
 </head>
 <body>
@@ -102,126 +36,51 @@
 <div class="container">
     <a href="index.html" class="back-btn">← 메인으로 돌아가기</a>
     <h1>🎯 주요 기업 직무 분석 리포트</h1>
-    <p class="subtitle">11개 타겟 직무의 비즈니스 목적과 핵심 역량 정리</p>
+    <p class="subtitle">11개 타겟 직무의 비즈니스 목적과 핵심 역량 상세 정리</p>
 
     <div class="job-card">
-        <div class="job-header">
-            <h2 class="job-title">01. 토스 (AI Engineer – Forward Deployed)</h2>
-            <span class="job-tag">AI / Fintech</span>
-        </div>
+        <div class="job-header"><h2 class="job-title">01. 토스 (AI Engineer – Forward Deployed)</h2><span class="job-tag">Fintech / AI</span></div>
         <div class="info-row"><span class="label">Objective</span><span class="content">금융 서비스에 AI를 실전 배치하여 효율과 UX 개선 (모델링 < 현실 적용)</span></div>
         <div class="info-row"><span class="label">해결 문제</span><span class="content">AI를 활용한 자동화, 추천, 상담, 리스크 관리</span></div>
         <div class="info-row"><span class="label">성과지표(KR)</span><span class="content">업무 시간 감소율, 응답 속도, 모델 성능(Latency), 전환율, 비용 절감</span></div>
+        <div class="info-row"><span class="label">고객/시장</span><span class="content">B2C 일반 사용자 / 금융을 쉽게 만드는 핀테크 시장</span></div>
         <div class="info-row"><span class="label">조직 단계</span><span class="content">PMF 검증 완료 → 제품 고도화 및 시장 확장 단계</span></div>
         <div class="info-row"><span class="label">핵심 역량</span><span class="content">AI 서비스 사이클 경험, LLM 활용, 백엔드 연동, 문제 정의 능력</span></div>
         <div class="info-row"><span class="label">기술 스택</span><div class="tech-box">Python, SQL, PyTorch, FastAPI, Docker, AWS/GCP</div></div>
     </div>
 
     <div class="job-card">
-        <div class="job-header">
-            <h2 class="job-title">02. CJ올리브영 (백엔드 엔지니어)</h2>
-            <span class="job-tag">Backend / Commerce</span>
-        </div>
+        <div class="job-header"><h2 class="job-title">02. CJ올리브영 (백엔드 엔지니어)</h2><span class="job-tag">Commerce / Backend</span></div>
         <div class="info-row"><span class="label">Objective</span><span class="content">대규모 커머스 서비스의 안정적 운영 (결제, 주문, 재고 시스템)</span></div>
         <div class="info-row"><span class="label">해결 문제</span><span class="content">트래픽 폭증에도 터지지 않는 안정적인 구조 설계</span></div>
         <div class="info-row"><span class="label">성과지표(KR)</span><span class="content">서버 응답 속도, 장애 복구 시간, 트래픽 처리량(TPS), 시스템 가용성</span></div>
+        <div class="info-row"><span class="label">고객/시장</span><span class="content">B2C(2030 여성) / 국내 H&B 1위 및 글로벌 옴니채널 시장</span></div>
+        <div class="info-row"><span class="label">조직 단계</span><span class="content">시장 장악 수준 → 고도화 및 글로벌 확장 단계</span></div>
         <div class="info-row"><span class="label">핵심 역량</span><span class="content">API/DB 설계 및 최적화, 성능 개선(캐싱, 튜닝), 안정성에 대한 집착</span></div>
         <div class="info-row"><span class="label">기술 스택</span><div class="tech-box">Java/Kotlin, Spring Boot, MySQL, Redis, K8s</div></div>
     </div>
 
     <div class="job-card">
-        <div class="job-header">
-            <h2 class="job-title">03. 현대자동차 (디지털 엔지니어링)</h2>
-            <span class="job-tag">Data / DX</span>
-        </div>
+        <div class="job-header"><h2 class="job-title">03. 현대자동차 (디지털 엔지니어링)</h2><span class="job-tag">Mobility / DX</span></div>
         <div class="info-row"><span class="label">Objective</span><span class="content">R&D 조직의 디지털 전환(DX) 및 업무 자동화 시스템 구축</span></div>
         <div class="info-row"><span class="label">해결 문제</span><span class="content">분산된 데이터 통합 및 연구개발 생산성 향상</span></div>
         <div class="info-row"><span class="label">성과지표(KR)</span><span class="content">데이터 처리 속도, 업무 자동화율, R&D 리드타임 감소</span></div>
+        <div class="info-row"><span class="label">고객/시장</span><span class="content">내부 연구원(B2E) / 글로벌 모빌리티 및 SDV 시장</span></div>
+        <div class="info-row"><span class="label">조직 단계</span><span class="content">대기업 성숙 단계 → 제품 고도화 및 DX 진행 중</span></div>
+        <div class="info-row"><span class="label">핵심 역량</span><span class="content">데이터 파이프라인(ETL), MLOps, 시스템 아키텍처 이해</span></div>
         <div class="info-row"><span class="label">기술 스택</span><div class="tech-box">Python, SQL, Java, ML/DL 프레임워크, FastAPI</div></div>
     </div>
 
     <div class="job-card">
-        <div class="job-header">
-            <h2 class="job-title">04. 삼성전자 DS AI센터 (SW 개발)</h2>
-            <span class="job-tag">AI / Semiconductor</span>
-        </div>
+        <div class="job-header"><h2 class="job-title">04. 삼성전자 DS AI센터 (SW 개발)</h2><span class="job-tag">Semiconductor / AI</span></div>
         <div class="info-row"><span class="label">Objective</span><span class="content">반도체 공정/설비 데이터를 활용한 AI 최적화 시스템 구축</span></div>
         <div class="info-row"><span class="label">해결 문제</span><span class="content">공정 이상 탐지, 불량 예측, 생산 최적화(수율 개선)</span></div>
         <div class="info-row"><span class="label">성과지표(KR)</span><span class="content">수율(Yield) 향상, 불량 검출 정확도, 설비 다운타임 감소</span></div>
+        <div class="info-row"><span class="label">고객/시장</span><span class="content">B2B 기업 고객 / 글로벌 반도체(메모리/파운드리) 시장</span></div>
+        <div class="info-row"><span class="label">조직 단계</span><span class="content">글로벌 Top 성숙 단계 → 스마트 팩토리 및 AI 공정 고도화</span></div>
+        <div class="info-row"><span class="label">핵심 역량</span><span class="content">시계열 데이터 처리, 이상 탐지 알고리즘, 공정 데이터 이해</span></div>
         <div class="info-row"><span class="label">기술 스택</span><div class="tech-box">Python, SQL, PyTorch, Linux, Spark, Docker</div></div>
     </div>
 
     <div class="job-card">
-        <div class="job-header">
-            <h2 class="job-title">05. 안랩 (DevOps 엔지니어)</h2>
-            <span class="job-tag">DevOps / Security</span>
-        </div>
-        <div class="info-row"><span class="label">Objective</span><span class="content">개발팀의 안정적 배포를 위한 인프라 자동화 환경 구축</span></div>
-        <div class="info-row"><span class="label">해결 문제</span><span class="content">빌드/배포 자동화 및 시스템 운영 안정성 확보</span></div>
-        <div class="info-row"><span class="label">기술 스택</span><div class="tech-box">Linux, Shell/Python, Docker, Jira</div></div>
-    </div>
-
-    <div class="job-card">
-        <div class="job-header">
-            <h2 class="job-title">06. 안랩 (SW 개발 – Cloud)</h2>
-            <span class="job-tag">Cloud / Backend</span>
-        </div>
-        <div class="info-row"><span class="label">Objective</span><span class="content">보안 서비스(Threat Intelligence) 개발 및 클라우드 운영</span></div>
-        <div class="info-row"><span class="label">성과지표(KR)</span><span class="content">처리 속도, 탐지 정확도, 시스템 안정성</span></div>
-        <div class="info-row"><span class="label">기술 스택</span><div class="tech-box">Java/Go/Python, Kubernetes, Kafka, DB</div></div>
-    </div>
-
-    <div class="job-card">
-        <div class="job-header">
-            <h2 class="job-title">07. SK쉴더스 (LLM & AI Agent Engineer)</h2>
-            <span class="job-tag">AI / LLM</span>
-        </div>
-        <div class="info-row"><span class="label">Objective</span><span class="content">보안 도메인 특화 LLM 활용 업무 자동화 시스템 구축</span></div>
-        <div class="info-row"><span class="label">핵심 역량</span><span class="content">RAG/파인튜닝, LLMOps, Vector DB 활용, AI Agent 구축</span></div>
-        <div class="info-row"><span class="label">기술 스택</span><div class="tech-box">Python, LangChain/LlamaIndex, PyTorch, MLflow</div></div>
-    </div>
-
-    <div class="job-card">
-        <div class="job-header">
-            <h2 class="job-title">08. 존슨앤드존슨 (AI Engineer – TLDP)</h2>
-            <span class="job-tag">AI / Healthcare</span>
-        </div>
-        <div class="info-row"><span class="label">Objective</span><span class="content">헬스케어 영역의 비즈니스 문제를 AI/데이터로 해결</span></div>
-        <div class="info-row"><span class="label">핵심 역량</span><span class="content">데이터 분석, 커뮤니케이션(영어), 서비스 연결 능력</span></div>
-        <div class="info-row"><span class="label">기술 스택</span><div class="tech-box">Python, SQL, BI Tool, Cloud</div></div>
-    </div>
-
-    <div class="job-card">
-        <div class="job-header">
-            <h2 class="job-title">09. 삼성SDS (SW 개발 – 클라우드)</h2>
-            <span class="job-tag">Cloud / System</span>
-        </div>
-        <div class="info-row"><span class="label">Objective</span><span class="content">기업용 클라우드 시스템 설계 및 솔루션 제공</span></div>
-        <div class="info-row"><span class="label">핵심 역량</span><span class="content">CS 기본기, 서버/백엔드 아키텍처 이해, 시스템 설계</span></div>
-        <div class="info-row"><span class="label">기술 스택</span><div class="tech-box">Java(필수), Spring Boot, Cloud(AWS/Azure), SQL</div></div>
-    </div>
-
-    <div class="job-card">
-        <div class="job-header">
-            <h2 class="job-title">10. 우아한형제들 (BI / 데이터 분석)</h2>
-            <span class="job-tag">BI / Data Analysis</span>
-        </div>
-        <div class="info-row"><span class="label">Objective</span><span class="content">전사 데이터 정리를 통한 의사결정 기준 수립</span></div>
-        <div class="info-row"><span class="label">성과지표(KR)</span><span class="content">KPI 신뢰도, 대시보드 활용률, 의사결정 반영률</span></div>
-        <div class="info-row"><span class="label">기술 스택</span><div class="tech-box">SQL, Python, Tableau, Airflow, BigQuery</div></div>
-    </div>
-
-    <div class="job-card">
-        <div class="job-header">
-            <h2 class="job-title">11. 우아한형제들 (데이터 엔지니어)</h2>
-            <span class="job-tag">Data Engineering</span>
-        </div>
-        <div class="info-row"><span class="label">Objective</span><span class="content">마케팅 활용을 위한 전사 사용자 데이터 가공 파이프라인 구축</span></div>
-        <div class="info-row"><span class="label">성과지표(KR)</span><span class="content">데이터 처리 속도, 파이프라인 안정성, 타겟팅 정확도</span></div>
-        <div class="info-row"><span class="label">기술 스택</span><div class="tech-box">Python/Java/Scala, Spark, Kafka, Airflow, AWS</div></div>
-    </div>
-
-</div>
-
-</body>
-</html>
+        <div class="job-header"><h2 class="job-
