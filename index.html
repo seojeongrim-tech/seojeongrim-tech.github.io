@@ -2,61 +2,146 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>Study Log</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Log | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
+    :root {
+      --primary: #2563eb;    /* 세련된 블루 */
+      --bg: #f8fafc;         /* 부드러운 배경색 */
+      --text: #1e293b;       /* 깊은 텍스트색 */
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
     }
 
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* 네비게이션 바 */
     header {
-      background: #222;
-      color: white;
-      padding: 15px;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px); /* 유리알 효과 */
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 10%;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--primary);
+      letter-spacing: -0.5px;
     }
 
     nav a {
-      color: white;
+      color: var(--text);
       text-decoration: none;
-      margin-left: 15px;
+      font-weight: 500;
+      margin-left: 2rem;
+      transition: color 0.3s;
     }
 
+    nav a:hover { color: var(--primary); }
+
     .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 0 15px;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* 히어로 섹션 (소개글) */
+    .hero {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    .hero p { color: #64748b; font-size: 1.1rem; }
+
+    /* 카드형 게시글 디자인 */
+    .post-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
     }
 
     .post {
-      background: white;
-      padding: 15px;
-      margin-bottom: 15px;
-      border: 1px solid #ddd;
-      cursor: pointer;
+      background: var(--card-bg);
+      padding: 24px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
     }
 
-    .hidden {
-      display: none;
+    .post:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+      border-color: var(--primary);
     }
 
-    input {
-      display: block;
-      width: 100%;
+    .post h3 { margin-top: 0; font-size: 1.3rem; }
+    .tag {
+      display: inline-block;
+      background: #eff6ff;
+      color: var(--primary);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.8rem;
       margin-bottom: 10px;
-      padding: 8px;
     }
 
-    button {
-      padding: 8px 12px;
-      background: #222;
+    .hidden { display: none; }
+
+    /* 상세 페이지 디자인 */
+    #detail {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    #detail-title { font-size: 2.2rem; margin-bottom: 20px; border-left: 5px solid var(--primary); padding-left: 20px; }
+    #detail-content { font-size: 1.1rem; color: #334155; white-space: pre-wrap; }
+
+    /* 버튼 스타일 */
+    .btn {
+      padding: 10px 20px;
+      background: var(--primary);
       color: white;
       border: none;
+      border-radius: 8px;
       cursor: pointer;
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+    .btn:hover { opacity: 0.9; }
+
+    /* 로그인 폼 */
+    .login-box {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 400px;
+      margin: 0 auto;
+      border: 1px solid var(--border);
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      box-sizing: border-box;
     }
   </style>
 </head>
@@ -64,7 +149,7 @@
 <body>
 
 <header>
-  <div>Study Log</div>
+  <div class="logo">KIM's Dev Archive</div>
   <nav>
     <a href="#" onclick="showPage('home')">Home</a>
     <a href="#" onclick="showPage('login')">Login</a>
@@ -73,27 +158,41 @@
 
 <div class="container">
 
-  <!-- HOME -->
   <div id="home">
-    <div class="post" onclick="showDetail('글 제목', '내용입니다')">
-      <h3>글 제목</h3>
-      <p>간단한 내용</p>
+    <div class="hero">
+      <h1>공부 기록 & 직무 분석</h1>
+      <p>성장하는 개발자의 기술 블로그입니다.</p>
+    </div>
+
+    <div class="post-grid">
+      <div class="post" onclick="showDetail('백엔드 직무 분석', '데이터베이스와 서버 로직을 설계하며...')">
+        <span class="tag">Career</span>
+        <h3>백엔드 직무 분석</h3>
+        <p>내가 생각하는 백엔드 개발자의 핵심 역량 정리</p>
+      </div>
+
+      <div class="post" onclick="showDetail('Servlet 에러 해결기', 'getAttribute 형변환 에러 때문에 고생한 기록...')">
+        <span class="tag">Tech</span>
+        <h3>Servlet 에러 해결기</h3>
+        <p>Object cannot be converted to String 해결법</p>
+      </div>
     </div>
   </div>
 
-  <!-- LOGIN -->
   <div id="login" class="hidden">
-    <h2>Login</h2>
-    <input type="text" placeholder="아이디">
-    <input type="password" placeholder="비밀번호">
-    <button onclick="alert('로그인 기능은 아직 구현 전')">로그인</button>
+    <div class="login-box">
+      <h2 style="margin-top:0">Welcome back</h2>
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <button class="btn" style="width:100%" onclick="alert('곧 구현될 예정입니다!')">Sign In</button>
+    </div>
   </div>
 
-  <!-- DETAIL -->
   <div id="detail" class="hidden">
     <h2 id="detail-title"></h2>
-    <p id="detail-content"></p>
-    <button onclick="showPage('home')">뒤로가기</button>
+    <div id="detail-content"></div>
+    <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
+    <button class="btn" onclick="showPage('home')">← 목록으로 돌아가기</button>
   </div>
 
 </div>
@@ -105,6 +204,7 @@
     document.getElementById('detail').classList.add('hidden');
 
     document.getElementById(page).classList.remove('hidden');
+    window.scrollTo(0, 0); // 페이지 상단으로 이동
   }
 
   function showDetail(title, content) {
