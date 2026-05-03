@@ -3,7 +3,7 @@
 수강신청 시스템의 핵심 로직인 **학생 옵션 기능 전반**과 **메시지 시스템**, **개인정보 관리 로직**을 전담하여 구현했습니다.
 
 #### 학생 메인 화면
-> > ![학생 메인 화면](./images/studentMain.png)
+<img src="./images/studentMain.png" width="600">
 
 ---
 
@@ -16,23 +16,20 @@
     * **시간표 중복 검증:** 강의 시간표 문자열을 파싱하여 단순 일치뿐만 아니라 교차 시간대(`월1-2`와 `월2-3`)까지 비교 연산자로 검증하여 중복 신청 방지.
 * **조회 및 출력:** 강의명, 강의실, 시간표, 강의 종류, 학점, 교수명, 수강 현황 등 다중 테이블 조인(`JOIN`) 출력.
 
-> > ![학점에 따른 수강 제한 화면](./images/limitEnrollmentByGrade.png)
-
-> > ![수강 인원 제한 화면](./images/studentsExceeded.png)
-
-> > ![시간표 중복 제한 화면](./images/timetableOverlapping.png)
+**[제약 사항 스크린샷]**
+<img src="./images/limitEnrollmentByGrade.png" width="600">
+<img src="./images/studentsExceeded.png" width="600">
+<img src="./images/timetableOverlapping.png" width="600">
 
 ### 📊 성적 및 이수 내역 조회
 * **전체/상세 성적:** 과목별 학점과 성적을 매핑하여 출력하고, 전체 이수학점 및 평균 평점을 계산하는 산출 로직 구현.
 * **수강 취소:** 수강 내역에서 선택한 강의 번호를 바탕으로 수강 데이터 삭제 및 인원 수 업데이트 연동.
 
-> > ![전체 성적 조회 화면](./images/wholeGrade.png)
+<img src="./images/wholeGrade.png" width="600">
+<img src="./images/detailGrade.png" width="600">
+<img src="./images/viewEnrollemts.png" width="600">
+<img src="./images/cancelEnrollments.png" width="600">
 
-> > ![상세 성적 조회 화면](./images/detailGrade.png)
-
-> > ![수강 내역 조회 화면](./images/viewEnrollemts.png)
-
-> > ![수강 취소 화면](./images/cancelEnrollments.png)
 ---
 
 ## 2. 메시지 시스템 (소통 채널)
@@ -44,14 +41,10 @@
     * 발신일 및 발신 시각 기록.
 * **유연한 발신:** 학생/교수 테이블을 `UNION`으로 통합하여 전체 사용자 목록 구현 및 자기 자신에게 메시지 보내기 가능.
 
-> > ![나에게 보내기 화면](./images/messageToMe.png)
-
-> > ![메시지 알림 화면](./images/messageAlarm.png)
-
-> > ![답장 및 채팅 내역 화면](./images/resendAndChatView.png)
-
-> > ![답장 후 읽음 처리 화면](./images/resendAndRead.png)
-
+<img src="./images/messageToMe.png" width="600">
+<img src="./images/messageAlarm.png" width="600">
+<img src="./images/resendAndChatView.png" width="600">
+<img src="./images/resendAndRead.png" width="600">
 
 ---
 
@@ -65,14 +58,15 @@
     * **비밀번호:** 8자 미만 또는 특수기호 미포함 시 재입력 가이드 출력.
 * **수정 로직:** 이름, 주소, 이메일, 연락처, 비밀번호 등 항목별 수정 기능 구현.
 
-> > ![내 정보 수정 화면](./images/modifyInfo.png)
+<img src="./images/modifyInfo.png" width="600">
 
 ---
 
 ### 🔗 소스 코드 확인
 * [LMS 프로젝트 전체 소스 코드 보러가기 (GitHub)](https://github.com/2023158013-tech/wanted_project)
+
 ## 💡 구현 특징 요약
 
-1.  **데이터 무결성:** 단순 입력이 아닌 시간표 중복, 학점 제한 등 복합적인 제약 사항을 DB와 Java 로직에서 이중 검증함.
-2.  **사용자 편의성:** 전화번호 자동 포맷팅, 메시지 읽음 상태 계산, 상세한 예외 메시지 출력 등을 통해 UX 개선에 집중함.
-3.  **쿼리 최적화:** `UNION` 및 `JOIN`을 활용하여 여러 테이블에 흩어진 데이터를 목적에 맞게 통합 조회함.
+1. **데이터 무결성:** 단순 입력이 아닌 시간표 중복, 학점 제한 등 복합적인 제약 사항을 DB와 Java 로직에서 이중 검증함.
+2. **사용자 편의성:** 전화번호 자동 포맷팅, 메시지 읽음 상태 계산, 상세한 예외 메시지 출력 등을 통해 UX 개선에 집중함.
+3. **쿼리 최적화:** `UNION` 및 `JOIN`을 활용하여 여러 테이블에 흩어진 데이터를 목적에 맞게 통합 조회함.
