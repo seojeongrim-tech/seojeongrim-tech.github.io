@@ -6,7 +6,7 @@
 
 ### 📂 상세 기록 바로가기
 
-#### 1. [🎓 프로젝트 회고](module2/project_review)
+#### 1. [🎓 프로젝트 회고](/module2/project_review)
 * **주제**: 실무형 기능을 추가한 LMS(학사관리시스템) 고도화
 * **핵심 내용**: 복잡한 DB 관계 속에서의 CRUD 전략, JPA의 Update/Delete 메커니즘 이해 및 트러블슈팅 경험을 정리했습니다.
 
