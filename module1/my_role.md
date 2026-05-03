@@ -37,7 +37,7 @@
 > > ![상세 성적 조회 화면](./images/detailGrade.png)
 
 <sub>* 수강 내역 조회 화면 </sub>
-> > ![수강 내역 조회 화면](./images/viewEnrollemts.png)
+> > ![수강 내역 조회 화면](./images/viewEnrollments.png)
 
 <sub>* 수강 취소 화면 </sub>
 > > ![수강 취소 화면](./images/cancelEnrollments.png)
