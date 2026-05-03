@@ -2,6 +2,9 @@
 
 수강신청 시스템의 핵심 로직인 **학생 옵션 기능 전반**과 **메시지 시스템**, **개인정보 관리 로직**을 전담하여 구현했습니다.
 
+#### 학생 메인 화면
+> > ![학생 메인 화면](./images/studentMain.png)
+
 ---
 
 ## 1. 수강신청 및 성적 관리 시스템
@@ -13,12 +16,18 @@
     * **시간표 중복 검증:** 강의 시간표 문자열을 파싱하여 단순 일치뿐만 아니라 교차 시간대(`월1-2`와 `월2-3`)까지 비교 연산자로 검증하여 중복 신청 방지.
 * **조회 및 출력:** 강의명, 강의실, 시간표, 강의 종류, 학점, 교수명, 수강 현황 등 다중 테이블 조인(`JOIN`) 출력.
 
-> > ![수강신청 화면](./images/course_registration.png)
+> > ![학점에 따른 수강 제한 화면](./images/limitEnrollmentByGrade.png)
+> > ![수강 인원 제한 화면](./images/studentsExceeded.png)
+> > ![시간표 중복 제한 화면](./images/timetableOverlapping.png)
 
 ### 📊 성적 및 이수 내역 조회
 * **전체/상세 성적:** 과목별 학점과 성적을 매핑하여 출력하고, 전체 이수학점 및 평균 평점을 계산하는 산출 로직 구현.
 * **수강 취소:** 수강 내역에서 선택한 강의 번호를 바탕으로 수강 데이터 삭제 및 인원 수 업데이트 연동.
 
+> > ![전체 성적 조회 화면](./images/wholeGrade.png)
+> > ![상세 성적 조회 화면](./images/detailGrade.png)
+> > ![수강 내역 조회 화면](./images/viewEnrollemts.png)
+> > ![수강 취소 화면](./images/cancelEnrollments.png)
 ---
 
 ## 2. 메시지 시스템 (소통 채널)
@@ -30,7 +39,11 @@
     * 발신일 및 발신 시각 기록.
 * **유연한 발신:** 학생/교수 테이블을 `UNION`으로 통합하여 전체 사용자 목록 구현 및 자기 자신에게 메시지 보내기 가능.
 
-> > ![메시지 시스템 화면](./images/message_system.png)
+> > ![나에게 보내기 화면](./images/messageToMe.png)
+> > ![메시지 알림 화면](./images/messageAlarm.png)
+> > ![답장 및 채팅 내역 화면](./images/resendAndChatView.png)
+> > ![답장 후 읽음 처리 화면](./images/resendAndRead.png)
+
 
 ---
 
@@ -44,7 +57,7 @@
     * **비밀번호:** 8자 미만 또는 특수기호 미포함 시 재입력 가이드 출력.
 * **수정 로직:** 이름, 주소, 이메일, 연락처, 비밀번호 등 항목별 수정 기능 구현.
 
-> > ![정보 수정 화면](./images/profile_edit.png)
+> > ![내 정보 수정 화면](./images/modifyInfo.png)
 
 ---
 
