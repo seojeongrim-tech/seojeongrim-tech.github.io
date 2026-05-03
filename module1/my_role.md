@@ -17,7 +17,9 @@
 * **조회 및 출력:** 강의명, 강의실, 시간표, 강의 종류, 학점, 교수명, 수강 현황 등 다중 테이블 조인(`JOIN`) 출력.
 
 > > ![학점에 따른 수강 제한 화면](./images/limitEnrollmentByGrade.png)
+
 > > ![수강 인원 제한 화면](./images/studentsExceeded.png)
+
 > > ![시간표 중복 제한 화면](./images/timetableOverlapping.png)
 
 ### 📊 성적 및 이수 내역 조회
@@ -25,8 +27,11 @@
 * **수강 취소:** 수강 내역에서 선택한 강의 번호를 바탕으로 수강 데이터 삭제 및 인원 수 업데이트 연동.
 
 > > ![전체 성적 조회 화면](./images/wholeGrade.png)
+
 > > ![상세 성적 조회 화면](./images/detailGrade.png)
+
 > > ![수강 내역 조회 화면](./images/viewEnrollemts.png)
+
 > > ![수강 취소 화면](./images/cancelEnrollments.png)
 ---
 
@@ -40,8 +45,11 @@
 * **유연한 발신:** 학생/교수 테이블을 `UNION`으로 통합하여 전체 사용자 목록 구현 및 자기 자신에게 메시지 보내기 가능.
 
 > > ![나에게 보내기 화면](./images/messageToMe.png)
+
 > > ![메시지 알림 화면](./images/messageAlarm.png)
+
 > > ![답장 및 채팅 내역 화면](./images/resendAndChatView.png)
+
 > > ![답장 후 읽음 처리 화면](./images/resendAndRead.png)
 
 
