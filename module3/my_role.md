@@ -20,7 +20,10 @@
 * **차단 목록 주체 식별**: 친구 차단 시 `fromUserId`를 차단 주체로 명확히 명시하여, 상대방이 나를 차단한 내역은 내 차단 목록에 노출되지 않도록 데이터 격리 성공.
 
 <sub>* 친구 목록 조회 로직 </sub>
-> > ![친구 목록 로직](./images/friend-list.png)
+> > ![친구 목록 로직](./images/friendListCode.png)
+
+<sub>* 친구 목록 조회 - 응답 JSON </sub>
+> > ![친구 목록 응답 캡처](./images/friend-request-exception-json.png) 
 
 <sub>* 사용자 검색 로직 </sub>
 > > ![사용자 검색 로직](./images/user-search.png)
