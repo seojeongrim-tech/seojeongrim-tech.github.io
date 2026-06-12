@@ -23,7 +23,7 @@
 > > ![친구 목록 로직](./images/friendListCode.png)
 
 <sub>* 친구 목록 조회 - 응답 JSON </sub>
-> > ![친구 목록 응답 캡처](./images/friend-request-exception-json.png) 
+> > ![친구 목록 응답 캡처](./images/friendListResponse.png) 
 
 <sub>* 사용자 검색 로직 </sub>
 > > ![사용자 검색 로직](./images/user-search.png)
