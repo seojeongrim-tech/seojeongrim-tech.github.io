@@ -26,7 +26,11 @@
 > > ![친구 목록 응답 캡처](./images/friendListResponse.png) 
 
 <sub>* 사용자 검색 로직 </sub>
-> > ![사용자 검색 로직](./images/user-search.png)
+> > ![사용자 검색 로직](./images/findUserCode.png)
+
+<sub>* 사용자 검색 - 응답 JSON </sub>
+> > ![사용자 검색 응답 캡처](./images/findUserResponse.png)
+> > *** "자"를 검색한 상태로 "자"를 포함한 사용자를 조회합니다.
 
 ---
 
