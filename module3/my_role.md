@@ -65,7 +65,7 @@
 * **비동기 메시지 알림**: 메시지 전송 시 비동기 이벤트를 발행하여 `notification` 테이블에 알림을 추가하며, 기존 내역이 존재하면 데이터 중복 생성을 방지하고 최신 메시지 내용과 시간, 읽음 여부만 `Update`하도록 최적화.
 
 <sub>* 1:1 실시간 대화방 로직 </sub>
-> > ![1:1 대화방 로직](./images/chat-room.png)
+> > ![1:1 대화방 로직](./images/sendMessageCode.png)
 
 <sub>* 메시지 내역 조회 응답 </sub>
 > > ![메시지 내역 조회 JSON 응답 캡처](./images/message-history-json.png) 
