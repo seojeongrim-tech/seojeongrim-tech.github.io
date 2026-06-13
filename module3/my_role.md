@@ -67,7 +67,7 @@
 <sub>* 1:1 실시간 대화방 로직 </sub>
 > > ![1:1 대화방 로직](./images/sendMessageCode.png)
 
-<sub>* 메시지 내역 조회 응답 </sub>
+<sub>* 메시지 내역 조회 - 응답 JSON </sub>
 > > ![메시지 내역 조회 JSON 응답 캡처](./images/getMessageListResponse.png)
 > * ** 강사와의 메시지 내역입니다. 프론트 측 요청으로 내가 보낸 메시지인지 구분하는 `isMine`을 추가하고 쿼리스트링으로 넘어오는 마지막 메시지 번호를 기준으로 20개씩 조회됩니다. **
 
@@ -79,7 +79,10 @@
 * **메시지 내역 역추적**: 채팅방 퇴장 사용자가 다시 개설하면 메시지 내역을 역추적 후 기존 채팅방으로 안내.
 
 <sub>* 채팅방 목록 및 안읽음 표시 로직 </sub>
-> > ![채팅방 목록 로직](./images/chat-list.png)
+> > ![채팅방 목록 로직](./images/getChatroomListCode.png)
+
+<sub>* 채팅방 목록 조회 - 응답 JSON </sub>
+> > ![채팅방 목록 응답 캡처](./images/getChatroomListResponse.png)  
 
 ---
 
