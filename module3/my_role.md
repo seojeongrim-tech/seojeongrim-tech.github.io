@@ -30,7 +30,7 @@
 
 <sub>* 사용자 검색 - 응답 JSON </sub>
 > > ![사용자 검색 응답 캡처](./images/findUserResponse.png)
-<small> * "자"를 검색한 상태로 닉네임에 "자"를 포함된 사용자를 조회합니다.*</small>
+> * ** "자"를 검색한 상태로 닉네임에 "자"를 포함된 사용자를 조회합니다.**
 
 ---
 
@@ -49,10 +49,11 @@
     * 친구 수락 완료 시 요청 발신자 공간에 `"{nickname}님과 친구가 되었습니다. 교류를 시작해보세요!"` 알림을 비동기 이벤트 기반으로 발행.
 
 <sub>* 친구 요청 및 수락 로직 </sub>
-> > ![친구 요청 로직](./images/friend-request.png)
+> > ![친구 요청 로직](./images/requestFriendCode.png)
 
 <sub>* 친구 요청 실패 시 - 예외 공통 응답 JSON 스냅샷 </sub>
-> > ![친구 요청 예외 발생 JSON 응답 캡처](./images/friend-request-exception-json.png) 
+> > ![친구 요청 예외 발생 JSON 응답 캡처](./images/friend-request-exception-json.png)
+> * ** 상대방이 이미 요청을 보낸 상테에서 맞요청 시의 예외 발생 상황입니다. **
 
 ---
 
