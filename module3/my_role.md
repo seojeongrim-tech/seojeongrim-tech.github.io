@@ -52,7 +52,7 @@
 > > ![친구 요청 로직](./images/requestFriendCode.png)
 
 <sub>* 친구 요청 실패 시 - 예외 공통 응답 JSON 스냅샷 </sub>
-> > ![친구 요청 예외 발생 JSON 응답 캡처](./images/friend-request-exception-json.png)
+> > ![친구 요청 예외 발생 JSON 응답 캡처](./images/requestFriendFailResponse.png)
 > * ** 상대방이 이미 요청을 보낸 상테에서 맞요청 시의 예외 발생 상황입니다. **
 
 ---
