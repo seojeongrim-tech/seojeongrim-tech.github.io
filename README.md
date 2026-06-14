@@ -4,11 +4,26 @@
 
 ### 🛠️ Tech Stacks
 <p align="left">
+  <!-- Languages -->
   <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
+  <br>
+  <!-- Frameworks & Libraries -->
   <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white">
-  <img src="https://img.shields.io/badge/JPA%20%2F%20Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white">
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white">
-  <img src="https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=socket.io&logoColor=white">
+  <img src="https://img.shields.io/badge/Hibernate%20%2F%20JPA-59666C?style=flat-square&logo=hibernate&logoColor=white">
+  <img src="https://img.shields.io/badge/Thymeleaf-005F0F?style=flat-square&logo=thymeleaf&logoColor=white">
+  <img src="https://img.shields.io/badge/JSON%20%2F%20JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white">
+  <br>
+  <!-- Data & Build -->
+  <img src="https://img.shields.io/badge/SQL%20%2F%20MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white">
+  <img src="https://img.shields.io/badge/Gradle-02303A?style=flat-square&logo=gradle&logoColor=white">
+  <img src="https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=flat-square&logo=intellijidea&logoColor=white">
+  <br>
+  <!-- CO-OP & Tools -->
+  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white">
+  <img src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=slack&logoColor=white">
+  <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white">
 </p>
 
 ---
