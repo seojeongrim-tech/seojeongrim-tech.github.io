@@ -78,7 +78,7 @@
 ---
 
 ### 🔗 소스 코드 확인
-* [LMS 프로젝트 전체 소스 코드 보러가기 (GitHub)](https://github.com/2023158013-tech/wanted_project/tree/main/module02)
+* [모듈2 LMS 프로젝트 전체 소스 코드 보러가기 (GitHub)](https://github.com/2023158013-tech/wanted_project/tree/main/module02)
 * 마이페이지 관련 핵심 도메인: /mypage 패키지
 
 ---
