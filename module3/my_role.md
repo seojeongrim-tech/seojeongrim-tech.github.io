@@ -97,7 +97,7 @@
 ---
 
 ### 🔗 소스 코드 확인
-* [LMS 친구 & 메시징 프로젝트 전체 소스 코드 (GitHub)](https://github.com/seojeongrim-tech/wanted_project)
+* [LMS 친구 & 메시징 프로젝트 전체 소스 코드 (GitHub)](https://github.com/seojeongrim-tech/wanted_project/tree/main/module03)
 
 ---
 
