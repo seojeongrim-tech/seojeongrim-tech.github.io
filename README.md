@@ -58,7 +58,7 @@
 * JPA를 활용한 개인화 서비스(포인트, 연차, 출결) 구축
 * 관리자용 동적 출결 수정 시스템 및 데이터 무결성 최적화
 
-#### 📦 [<span style="color: #1e88e5;">[모듈 3: 단계별 기능 확장 및 실시간 1:1 메시징 프로젝트</span>](/module3/README)
+#### 📦 [<span style="color: #1e88e5;">모듈 3: 친구 도메인 및 1:1 메시징 프로젝트</span>](/module3/README)
 * HTTP POST와 WebSocket STOMP를 융합한 하이브리드 메시징 인프라 구축
 * 맞요청 차단, 타임라인 격리 알고리즘 및 `SideRepository`를 통한 독자적 아키텍처 수립
 
