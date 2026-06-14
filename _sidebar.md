@@ -10,3 +10,8 @@
   * [🎓 프로젝트 회고](/module2/project_review)
   * [⚙️ 내가 맡은 기능](/module2/my_role)
   * [📝 학습 내용 및 주석 정리](/module2/lecture_notes)
+
+* [📁 **모듈 3: 2026.04.23 - 2026.06.01**](/module3/README)
+  * [🎓 프로젝트 회고](/module3/project_review)
+  * [⚙️ 내가 맡은 기능](/module3/my_role)
+  * [📝 학습 내용 및 주석 정리](/module3/lecture_notes)
