@@ -75,6 +75,6 @@
 ---
 
 ### 🔗 소스 코드 확인
-* [LMS 프로젝트 전체 소스 코드 보러가기 (GitHub)](https://github.com/2023158013-tech/wanted_project/tree/main/module01)
+* [모듈1 LMS 프로젝트 전체 소스 코드 보러가기 (GitHub)](https://github.com/2023158013-tech/wanted_project/tree/main/module01)
 * 학생 관련 핵심 도메인: 각 레이어 패키지 내 Student* 관련 파일 일체 전담 개발
 (StudentController, StudentService, StudentDAO, StudentDTO, StudentView)
