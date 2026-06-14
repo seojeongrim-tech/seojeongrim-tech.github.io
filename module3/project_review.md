@@ -11,7 +11,7 @@
 ## 2. 해결 과정 및 설계 의도 (Solution & Design)
 
 <p align="center">
-  <img src="https://github.com/seojeongrim-tech/seojeongrim-tech.github.io/raw/main/module3/images/module3MiroDesign.png" alt="모듈3 도메인 및 정책 설계 Miro"><br>
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module3/images/module3MiroDesign.png" alt="모듈3 도메인 및 정책 설계 Miro"><br>
   <small><i>▲ 모듈 3 초기 도메인 정책 및 관계 설계 아키텍처 스케치 (※ 방명록 기능은 모듈 3 설계 단계 참여 후, 모듈 4 스프린트에서 팀원 간 역할 조율로 이관되었습니다.)</i></small>
 </p>
 
