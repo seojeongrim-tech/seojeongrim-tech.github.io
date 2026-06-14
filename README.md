@@ -45,4 +45,13 @@
 * 맞요청 차단, 타임라인 격리 알고리즘 및 `SideRepository`를 통한 독자적 아키텍처 수립
 
 ---
+
+### 📄 Resume & Contact
+<span style="color: #1e88e5;"><b>서정림에 대해 더 자세히 알고 싶으시다면 아래 링크를 확인해 주세요.</b></span>
+
+* **Notion 이력서**: 📑 [서정림의 상세 이력서 확인하기 (Link)](#) <img src="https://sphenoid-pink-6af.notion.site/65a6d822851c828a86dc8183a5be3792?source=copy_linke">
+* **GitHub**: 💻 [seojeongrim-tech](https://github.com/seojeongrim-tech)
+* **Email**: ✉️ seo_jeongrim@naver.com *(실제 이메일 주소로 변경하세요)*
+
+---
 💡 <span style="color: #1e88e5;"><b>원하시는 상세 기록 페이지를 클릭하여 기술적 고민의 흔적을 확인해 보세요!</b></span>
