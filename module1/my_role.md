@@ -89,3 +89,10 @@
 1.  **데이터 무결성:** 단순 입력이 아닌 시간표 중복, 학점 제한 등 복합적인 제약 사항을 DB와 Java 로직에서 이중 검증함.
 2.  **사용자 편의성:** 전화번호 자동 포맷팅, 메시지 읽음 상태 계산, 상세한 예외 메시지 출력 등을 통해 UX 개선에 집중함.
 3.  **쿼리 최적화:** `UNION` 및 `JOIN`을 활용하여 여러 테이블에 흩어진 데이터를 목적에 맞게 통합 조회함.
+
+---
+
+### 🔗 소스 코드 확인
+* [모듈1 LMS 프로젝트 전체 소스 코드 보러가기 (GitHub)](https://github.com/2023158013-tech/wanted_project/tree/main/module01)
+* 학생 관련 핵심 도메인: 각 레이어 패키지 내 Student* 관련 파일 일체 전담 개발
+(StudentController, StudentService, StudentDAO, StudentDTO, StudentView)
