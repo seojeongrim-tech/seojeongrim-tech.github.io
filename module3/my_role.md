@@ -98,6 +98,9 @@
 
 ### 🔗 소스 코드 확인
 * [LMS 친구 & 메시징 프로젝트 전체 소스 코드 (GitHub)](https://github.com/seojeongrim-tech/wanted_project/tree/main/module03)
+* 친구 관련 핵심 도메인: /friend 패키지
+* 메시지 관련 핵심 도메인: /message 패키지
+* 모듈4 연계용 비동기 이벤트: /notification 패키지
 
 ---
 
