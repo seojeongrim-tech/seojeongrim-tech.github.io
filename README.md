@@ -33,14 +33,14 @@
 #### 🎯 [직무 분석 리포트](/analysis)
 * 타겟 기업 11곳의 상세 분석 리포트
 
-#### 📦 <span style="color: #1e88e5;">[모듈 1: 백엔드 기초 및 수강신청 프로젝트]</span>(/module1/README)
+#### 📦 [<span style="color: #1e88e5;">모듈 1: 백엔드 기초 및 수강신청 프로젝트</span>](/module1/README)
 * 수행한 프로젝트의 회고 및 기술 스택 정리
 
-#### 📦 <span style="color: #1e88e5;">[모듈 2: 마이페이지 및 근태 관리 프로젝트]</span>(/module2/README)
 * JPA를 활용한 개인화 서비스(포인트, 연차, 출결) 구축
 * 관리자용 동적 출결 수정 시스템 및 데이터 무결성 최적화
+#### 📦 [<span style="color: #1e88e5;">모듈 2: 마이페이지 및 근태 관리 프로젝트</span>](/module2/README)
 
-#### 📦 <span style="color: #1e88e5;">[모듈 3: 단계별 기능 확장 및 실시간 1:1 메시징 프로젝트]</span>(/module3/README)
+#### 📦 [<span style="color: #1e88e5;">[모듈 3: 단계별 기능 확장 및 실시간 1:1 메시징 프로젝트</span>](/module3/README)
 * HTTP POST와 WebSocket STOMP를 융합한 하이브리드 메시징 인프라 구축
 * 맞요청 차단, 타임라인 격리 알고리즘 및 `SideRepository`를 통한 독자적 아키텍처 수립
 
@@ -49,9 +49,9 @@
 ### 📄 Resume & Contact
 <span style="color: #1e88e5;"><b>서정림에 대해 더 자세히 알고 싶으시다면 아래 링크를 확인해 주세요.</b></span>
 
-* **Notion 이력서**: 📑 [서정림의 상세 이력서 확인하기 (Link)](#) <img src="https://sphenoid-pink-6af.notion.site/65a6d822851c828a86dc8183a5be3792?source=copy_linke">
+* **Notion 이력서**: 📑 [서정림의 상세 이력서 확인하기 (https://sphenoid-pink-6af.notion.site/65a6d822851c828a86dc8183a5be3792?source=copy_linke)]
 * **GitHub**: 💻 [seojeongrim-tech](https://github.com/seojeongrim-tech)
-* **Email**: ✉️ seo_jeongrim@naver.com *(실제 이메일 주소로 변경하세요)*
+* **Email**: ✉️ seo_jeongrim@naver.com
 
 ---
 💡 <span style="color: #1e88e5;"><b>원하시는 상세 기록 페이지를 클릭하여 기술적 고민의 흔적을 확인해 보세요!</b></span>
