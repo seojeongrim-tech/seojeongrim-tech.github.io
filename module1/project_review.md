@@ -71,3 +71,10 @@
 * **동시성 제어**: 수강신청 버튼을 동시에 누를 때 발생하는 Race Condition 해결을 위한 DB Lock 메커니즘 학습.
 * **기능 확장**: 현재의 쪽지 수준을 넘어 실시간성을 강화하고, '수강바구니(예비수강신청)' 시스템 도입 검토.
 * **LMS 본연의 기능**: 강의 등록, 학습 시간 추적(진도율) 등 실제 교육 관리 기능을 추가하여 시스템 완성도 향상.
+
+---
+
+### 🔗 소스 코드 확인
+* [LMS 프로젝트 전체 소스 코드 보러가기 (GitHub)](https://github.com/2023158013-tech/wanted_project/tree/main/module01)
+* 학생 관련 핵심 도메인: 각 레이어 패키지 내 Student* 관련 파일 일체 전담 개발
+(StudentController, StudentService, StudentDAO, StudentDTO, StudentView)
