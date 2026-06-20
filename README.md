@@ -15,7 +15,7 @@
       <h4>📬 Contact & Link</h4>
       <span style="color: #1e88e5;"><b>서정림에 대해 더 자세히 알고 싶으시다면 아래 링크를 확인해 주세요.</b></span>
       <ul>
-        <li>📑 <b><a href="https://sphenoid-pink-6af.notion.site/65a6d822851c828a86dc8183a5be3792?source=copy_linke">Notion 이력서</a></b></li>
+        <li>📑 <b><a href="https://app.notion.com/p/65a6d822851c828a86dc8183a5be3792?source=copy_link">Notion 이력서</a></b></li>
         <li>💻 <b><a href="https://github.com/seojeongrim-tech">GitHub 프로필</a></b></li>
         <li>✉️ seo_jeongrim@naver.com</li>
       </ul>
