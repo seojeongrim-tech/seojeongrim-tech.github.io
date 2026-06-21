@@ -1,5 +1,5 @@
 * [🏠 홈](/README)
-* [🎯 직무 분석 리포트](/analysis)
+<!-- * [🎯 직무 분석 리포트](/analysis) -->
 
 * [📁 **모듈 1: 2026.02.23-2026.03.25**](/module1/README)
   * [🎓 프로젝트 회고](/module1/project_review)
