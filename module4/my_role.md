@@ -122,7 +122,7 @@
   <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module3MessagePerf(SQL, log).png" width="90%" alt="모듈3 메시지 성능">
 </p>
    <p align="center">
-  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈3 친구 성능(응답 시간, SQL).jpg" width="90%" alt="모듈3 친구 한계 로그">
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module3FriendPerf(SQL, log).png" width="90%" alt="모듈3 친구 성능">
 </p>
 </details>
 
