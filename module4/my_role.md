@@ -120,7 +120,7 @@
   </tr>
   <tr>
     <td valign="top" align="center">
-      <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/기존_모듈3_ERD_파일명.png" width="100%"><br>
+      <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module3ERD.png" width="100%"><br>
       <sub>▲ 모듈 3 ERD: 정렬되지 않고 파편화되어 참조 관계를 파악하기 어려웠던 초기 구조</sub>
     </td>
     <td valign="top" align="center">
