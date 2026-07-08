@@ -155,8 +155,8 @@
 <summary><b>🎯 모듈 4 [개선 후] P6Spy 로그 스크린샷 보기 (클릭)</b></summary>
 <p align="center">
   <b>[친구 도메인 벌크 통합 성공]</b><br>
-  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선후-친구1(SQL, 로그 기반).jpg" width="90%"><br><br>
-  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선후-친구2(SQL, 로그 기반).png" width="90%"><br><br>
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4FriendPerfAfter-1(SQL, log).png" width="90%"><br><br>
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4FriendPerfAfter-2(SQL, log).png" width="90%"><br><br>
   <hr style="border: 1px dashed #ccc;"><br>
   <b>[메시지 및 알림 O(1) 인메모리 매핑 완결]</b><br>
   <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선후-친구3,메시지1(SQL, 로그 기반).png" width="90%"><br><br>
