@@ -207,7 +207,7 @@
 
 ### 🔗 소스 코드 확인
 * [LMS 친구 & 메시징 & 알림 프로젝트 전체 소스 코드 (GitHub)](https://github.com/seojeongrim-tech/wanted_project/tree/main/module04)
-* * 친구(방명록) 관련 핵심 도메인: /friend 패키지
+* 친구(방명록) 관련 핵심 도메인: /friend 패키지
 * 메시지 관련 핵심 도메인: /message 패키지
 * 알림 관련 핵심 도메인: /notification 패키지
 * 웹소켓 관련 코드: /global/infrastructure/config 패키지
