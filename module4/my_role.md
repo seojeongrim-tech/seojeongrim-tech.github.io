@@ -119,7 +119,8 @@
 <details>
 <summary><b>🔍 모듈 3 분석 데이터 로그 보기 (클릭)</b></summary>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module3MessagePerf(SQL, log).png" width="90%" alt="모듈3 메시지 성능">
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module3MessagePerf(SQL, log).png" width="90%" alt="모듈3 메시지 성능"><br>
+  <sub>▲ 모듈 3 메시지 성능: 조회 시 N+1 문제 파악</sub>
 </p>
    <p align="center">
   <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module3FriendPerf(SQL, log).png" width="90%" alt="모듈3 친구 성능">
