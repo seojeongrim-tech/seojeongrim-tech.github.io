@@ -141,8 +141,8 @@
   <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4FriendPerfBefore-2(SQL, log).png" width="90%" alt="모듈4 친구 성능 개선전2"><br><br>
   <hr style="border: 1px dashed #ccc;"><br>
   <b>[메시지 및 알림 인프라 개선 전 Fan-out 부하]</b><br>
-  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선전-메시지1(SQL, 로그 기반).jpg" width="90%"><br><br>
-  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선전-메시지2, 알림(SQL, 로그 기반).jpg" width="90%">
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4MessagePerfBefore-1(SQL, log).png" width="90%"><br><br>
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4Message2NotiPerfBefore(SQL, log).png" width="90%">
 </p>
 </details>
 
