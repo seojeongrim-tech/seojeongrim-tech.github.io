@@ -16,6 +16,14 @@
 
 ---
 
+### 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4MiroDesign.png" alt="모듈4 도메인 및 정책 설계 Miro"><br>
+  <small><i>▲ 모듈 4 초기 도메인 정책 및 관계 설계 아키텍처 스케치 (※ 방명록 반영, 메시지 다대다 확장, 알림 반영)</i></small>
+</p>
+
+---
+
 ### 🔄 모듈 3 대비 구조적 개선점 및 연계 사항
 * **비즈니스 정책 레이어 완전 위임**: `friend` 및 `message` 도메인 내에 파편화되어 분산되어 있던 예외 처리와 검증 로직을 도메인 정책 클래스(`EligibilityPolicy`)로 100% 완전 위임하여 비즈니스 응집도를 극대화했습니다.
 * **CQRS 기반의 Service 클래스 통합**: 기존에 기능별로 수없이 쪼개져 있어 유지보수가 어렵던 파일들을 Aggregate 기준으로 구조화하여 `Command`와 `Query` 단 두 개의 명확한 서비스 클래스로 통합 리팩토링했습니다.
