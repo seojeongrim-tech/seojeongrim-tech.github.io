@@ -113,7 +113,7 @@
 
 구축된 실시간 인프라 및 다대다 전환 환경 하에서 사용자 수와 대화방 수 증가에 비례하여 발생하던 **Fan-out(루프 쿼리 폭증 및 N+1) 결함을 완벽히 해결하고 인메모리 벌크 조회를 통한 성능 혁신을 실증**했습니다.
 
-### 🗂️ 6-1. [빌드업] 모듈 3 초기 설계의 성능적 한계 (개선 전 데이터)
+### 🗂️ 6-1. 모듈 3 초기 설계의 성능적 한계 (개선 전 데이터)
 모듈 3 당시 적은 더미 데이터와 웹소켓 미연동으로 성능 개선이 크게 필요하진 않았으나 다수의 조회에서 잠재적 N+1 문제를 파악했으며 모듈 4의 대대적인 쿼리 튜닝으로 이어지는 명확한 명분을 제공했습니다.
 
 <details>
@@ -135,8 +135,8 @@
 <summary><b>❌ 모듈 4 [개선 전] P6Spy 로그 스크린샷 보기 (클릭)</b></summary>
 <p align="center">
   <b>[친구 도메인 개선 전 쿼리 폭증]</b><br>
-  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선전-친구1(SQL, 로그 기반).jpg" width="90%"><br><br>
-  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선전-친구2(SQL, 로그 기반).jpg" width="90%"><br><br>
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4FriendPerfBefore-1(SQL, log).png" width="90%" alt="모듈4 친구 성능 개선전1"><br><br>
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4FriendPerfBefore-2(SQL, log).png" width="90%" alt="모듈4 친구 성능 개선전2"><br><br>
   <hr style="border: 1px dashed #ccc;"><br>
   <b>[메시지 및 알림 인프라 개선 전 Fan-out 부하]</b><br>
   <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선전-메시지1(SQL, 로그 기반).jpg" width="90%"><br><br>
