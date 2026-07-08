@@ -32,6 +32,35 @@
 
 <table>
   <tr>
+    <td align="center" width="50%"><b>🏛️ 개선 전 파편화된 서비스 구조 (AS-IS)</b></td>
+    <td align="center" width="50%"><b>🚀 개선 후 CQRS 기반 통합 구조 (TO-BE)</b></td>
+  </tr>
+  
+  <tr>
+    <td>
+      <p align="center"><small>👥 친구 도메인</small></p>
+      <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module3FriendPackageArchitecture.png" width="100%" alt="친구 개선 전">
+    </td>
+    <td>
+      <p align="center"><small>👥 친구(방명록) 도메인</small></p>
+      <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4FriendPackageArchitectureAfter.png" width="100%" alt="친구 개선 후">
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      <p align="center"><small>💬 메시지 도메인</small></p>
+      <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module3MessagePackageArchitecture.png" width="100%" alt="메시지 개선 전">
+    </td>
+    <td>
+      <p align="center"><small>💬 메시지 도메인</small></p>
+      <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4MessagePackageArchitectureAfter.png" width="100%" alt="메시지 개선 후">
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
     <td align="center" width="50%"><b>🏛️ 개선 전 파편화된 서비스 구조</b></td>
     <td align="center" width="50%"><b>🚀 개선 후 CQRS 기반 통합 구조</b></td>
   </tr>
