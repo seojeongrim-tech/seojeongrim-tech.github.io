@@ -159,8 +159,8 @@
   <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4FriendPerfAfter-2(SQL, log).png" width="90%"><br><br>
   <hr style="border: 1px dashed #ccc;"><br>
   <b>[메시지 및 알림 O(1) 인메모리 매핑 완결]</b><br>
-  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선후-친구3,메시지1(SQL, 로그 기반).png" width="90%"><br><br>
-  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선후-메시지2, 알림1(SQL, 로그 기반).png" width="90%"><br><br>
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4FriendPerfAfter-1(SQL, log).png" width="90%"><br><br>
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4Friend2Message1PerfAfter(SQL, log).png" width="90%"><br><br>
   <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선후-알림2(SQL, 로그 기반).png" width="90%">
 </p>
 </details>
