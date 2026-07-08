@@ -105,6 +105,12 @@
 팀원들의 소통 지연과 인프라 파편화 상황 속에서, 데이터베이스 설계 리더십을 발휘하여 개발 병목을 돌파했습니다.
 
 * **파편화된 ERD 단일화 및 통합 제어**: 모듈 4 재정비 중 팀원이 요구사항을 임의로 반영해 ERD 버전을 무분별하게 새로 파편화시키는 리스크 포착. 슬랙 논의의 한계를 인지하고 직접 구두 소통을 주도하여 모든 요구사항을 통합한 모듈 4 최종본 ERD로 단일화 완료 후 파편화된 구버전은 과감히 폐기 처리.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/ERDVersions.png" width="90%" alt="모듈3 ERD 버전별 생성"><br>
+  <sub>▲ 모듈 3 ERD 버전별 생성: 팀원의 무분별한 버전별 생성에서의 문제점 파악</sub>
+</p>
+
 * **자발적 DDL 수립**: 팀원들의 무분별한 수정에도 ERD와 하나하나 비교하여 DDL 구문 정합성을 맞추기 위해 노력함.
 
 <p align="center">
