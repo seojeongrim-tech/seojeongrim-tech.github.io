@@ -65,5 +65,10 @@
 * HTTP POST와 WebSocket STOMP를 융합한 하이브리드 메시징 인프라 구축
 * 맞요청 차단, 타임라인 격리 알고리즘 및 `SideRepository`를 통한 독자적 아키텍처 수립
 
+#### 📦 [<span style="color: #1e88e5;">모듈 4: 다대다 메시지 확장 및 웹 성능 최적화</span>](/module4/README)
+* **팀 구성**: 백엔드 5명(JSON 응답) / 프론트 2명
+* Prometheus, Grafana, Loki 분산 모니터링 인프라 및 k6 시나리오 부하 테스트 설계
+* 다대다 채팅 확장 및 SQL `IN 절` 벌크 조회를 활용한 $O(1)$ 인메모리 매핑 성능 최적화
+
 ---
 💡 <span style="color: #1e88e5;"><b>원하시는 상세 기록 페이지를 클릭하여 기술적 고민의 흔적을 확인해 보세요!</b></span>
