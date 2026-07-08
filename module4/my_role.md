@@ -113,10 +113,22 @@
 
 * **자발적 DDL 수립**: 팀원들의 무분별한 수정에도 ERD와 하나하나 비교하여 DDL 구문 정합성을 맞추기 위해 노력함.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4ERD.png" width="90%" alt="모듈4 최종 ERD"><br>
-  <sub>▲ 모듈 4 최종 ERD: 도메인별 색 지정 후 정리(11/28 테이블 참조)</sub>
-</p>
+<table width="100%">
+  <tr>
+    <td align="center" width="50%"><b>❌ 모듈 3 이전 ERD (도메인 파편화 상태)</b></td>
+    <td align="center" width="50%"><b>🎯 모듈 4 최종 ERD (도메인 정렬 및 색 지정 완료)</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center">
+      <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/기존_모듈3_ERD_파일명.png" width="100%"><br>
+      <sub>▲ 모듈 3 ERD: 정렬되지 않고 파편화되어 참조 관계를 파악하기 어려웠던 초기 구조</sub>
+    </td>
+    <td valign="top" align="center">
+      <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4ERD.png" width="100%"><br>
+      <sub>▲ 모듈 4 최종 ERD: 도메인별 색 지정 후 정리 (11/28 테이블 참조 완료)</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
