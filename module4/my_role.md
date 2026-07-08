@@ -100,23 +100,68 @@
 
 ---
 
-## 5. 프론트엔드 고려 및 상호 커뮤니케이션 중심 트러블 슈팅
-
-* **데이터 누락 없는 구조적 JSON 응답 스펙 설계**: 
-    * 모듈 4 재정비 과정에서 데이터가 비어있을 때(`null`) 필드 자체를 생략해 버리면 프론트엔드 단에서 `undefined` 에러 방지를 위해 일일이 방어 코드를 짜야 하는 불편함을 유발함을 인지. 
-    * 값이 없더라도 명세서 구조를 100% 유지하여 빈 객체나 `null`로 필드를 고정 전달하는 방식으로 API 포맷을 전면 조율하여 프론트엔드의 데이터 소비 효율성 극대화.
-* **웹소켓 실시간 미표출 결함 격리**: 
-    * 알림 개수가 실시간으로 반영되지 않는 이슈가 발생했을 때, 백엔드 웹소켓 발행 주소와 정합성 로그를 기반으로 역추적하여 데이터가 정상 방출됨을 증명. 
-    * 이후 프론트엔드 단에서 "알림이 1개 초과일 때만 화면에 그리도록 한 조건문 설정 오류"를 찾아내어 결함의 위치를 명확히 격리하고 해결을 지원함.
-
----
-
-## 6. DBA 역할 연속 수행 및 DDL 선제 최적화
+## 5. DBA 역할 연속 수행 및 DDL 선제 최적화
 
 팀원들의 소통 지연과 인프라 파편화 상황 속에서, 데이터베이스 설계 리더십을 발휘하여 개발 병목을 돌파했습니다.
 
 * **파편화된 ERD 단일화 및 통합 제어**: 모듈 4 재정비 중 팀원이 요구사항을 임의로 반영해 ERD 버전을 무분별하게 새로 파편화시키는 리스크 포착. 슬랙 논의의 한계를 인지하고 직접 구두 소통을 주도하여 모든 요구사항을 통합한 모듈 4 최종본 ERD로 단일화 완료 후 파편화된 구버전은 과감히 폐기 처리.
 * **자발적 DDL 수립**: 팀원들의 무분별한 수정에도 ERD와 하나하나 비교하여 DDL 구문 정합성을 맞추기 위해 노력함.
+
+---
+
+## 📉 6. 하이엔드 아키텍처 아웃풋: 대규모 데이터 조회 및 SQL 성능 최적화 지표
+
+구축된 실시간 인프라 및 다대다 전환 환경 하에서 사용자 수와 대화방 수 증가에 비례하여 발생하던 **Fan-out(루프 쿼리 폭증 및 N+1) 결함을 완벽히 해결하고 인메모리 벌크 조회를 통한 성능 혁신을 실증**했습니다.
+
+### 🗂️ 6-1. [빌드업] 모듈 3 초기 설계의 성능적 한계 (개선 전 데이터)
+모듈 3 당시 적은 더미 데이터와 웹소켓 미연동으로 성능 개선이 크게 필요하진 않았으나 다수의 조회에서 잠재적 N+1 문제를 파악했으며 모듈 4의 대대적인 쿼리 튜닝으로 이어지는 명확한 명분을 제공했습니다.
+
+<details>
+<summary><b>🔍 모듈 3 분석 데이터 로그 보기 (클릭)</b></summary>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈3 메시지 성능(응답 시간, SQL).jpg" width="90%" alt="모듈3 메시지 한계 로그">
+</p>
+   <p align="center">
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈3 친구 성능(응답 시간, SQL).jpg" width="90%" alt="모듈3 친구 한계 로그">
+</p>
+</details>
+
+---
+
+### ❌ 6-2. 모듈 4 패키지 구조 개편 및 인프라 최적화 [개선 전 로그]
+모듈 4 기능 구동 시, 복잡한 다중 채널 환경과 맞물려 친구 목록 조회(11방), 메시지 내역 조회(151방), 알림 목록 조회(201방) 등 가혹한 N+1 루프 백 쿼리 폭증과 장기 락(Lock) 유발 현상이 측정된 개선 전 P6Spy 실증 지표 로그입니다.
+
+<details>
+<summary><b>❌ 모듈 4 [개선 전] P6Spy 로그 스크린샷 보기 (클릭)</b></summary>
+<p align="center">
+  <b>[친구 도메인 개선 전 쿼리 폭증]</b><br>
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선전-친구1(SQL, 로그 기반).jpg" width="90%"><br><br>
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선전-친구2(SQL, 로그 기반).jpg" width="90%"><br><br>
+  <hr style="border: 1px dashed #ccc;"><br>
+  <b>[메시지 및 알림 인프라 개선 전 Fan-out 부하]</b><br>
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선전-메시지1(SQL, 로그 기반).jpg" width="90%"><br><br>
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선전-메시지2, 알림(SQL, 로그 기반).jpg" width="90%">
+</p>
+</details>
+
+---
+
+### 🎯 6-3. 모듈 4 벌크 인메모리 아키텍처 도입 [개선 후 로그]
+반복문 내부의 개별 호출을 단 한 방의 식별자 기반 `IN 절` 쿼리로 일괄 통합하고, 애플리케이션 계층 Java `Map` 구조의 메모리에 적재하여 $O(1)$ 속도로 조립 연산하도록 완결한 개선 후 지표입니다. 쿼리 수 96% 이상 감소 및 최대 57% 이상의 획기적인 레이턴시 단축을 증명했습니다.
+
+<details>
+<summary><b>🎯 모듈 4 [개선 후] P6Spy 로그 스크린샷 보기 (클릭)</b></summary>
+<p align="center">
+  <b>[친구 도메인 벌크 통합 성공]</b><br>
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선후-친구1(SQL, 로그 기반).jpg" width="90%"><br><br>
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선후-친구2(SQL, 로그 기반).png" width="90%"><br><br>
+  <hr style="border: 1px dashed #ccc;"><br>
+  <b>[메시지 및 알림 O(1) 인메모리 매핑 완결]</b><br>
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선후-친구3,메시지1(SQL, 로그 기반).png" width="90%"><br><br>
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선후-메시지2, 알림1(SQL, 로그 기반).png" width="90%"><br><br>
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선후-알림2(SQL, 로그 기반).png" width="90%">
+</p>
+</details>
 
 ---
 
