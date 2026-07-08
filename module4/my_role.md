@@ -123,14 +123,15 @@
   <sub>▲ 모듈 3 메시지 성능: 조회 시 N+1 문제 파악</sub>
 </p>
    <p align="center">
-  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module3FriendPerf(SQL, log).png" width="90%" alt="모듈3 친구 성능">
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module3FriendPerf(SQL, log).png" width="90%" alt="모듈3 친구 성능"><br>
+  <sub>▲ 모듈 3 친구 성능: 조회 시 N+1 문제 파악</sub>
 </p>
 </details>
 
 ---
 
 ### ❌ 6-2. 모듈 4 패키지 구조 개편 및 인프라 최적화 [개선 전 로그]
-모듈 4 기능 구동 시, 복잡한 다중 채널 환경과 맞물려 친구 목록 조회(11방), 메시지 내역 조회(151방), 알림 목록 조회(201방) 등 가혹한 N+1 루프 백 쿼리 폭증과 장기 락(Lock) 유발 현상이 측정된 개선 전 P6Spy 실증 지표 로그입니다.
+모듈 4 기능 구동 시, 복잡한 다중 채널 환경과 맞물려 친구 목록 조회(11방), 메시지 내역 조회(151방), 알림 목록 조회(201방) 등 가혹한 N+1 루프 백 쿼리 폭증과 장기 락(Lock) 유발 현상이 측정된 개선 전 P6Spy 실증 지표입니다.
 
 <details>
 <summary><b>❌ 모듈 4 [개선 전] P6Spy 로그 스크린샷 보기 (클릭)</b></summary>
