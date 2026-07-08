@@ -100,12 +100,20 @@
 
 ---
 
-## 5. DBA 역할 연속 수행 및 DDL 선제 최적화
+## 5. DBA 역할 수행 및 DDL 선제 최적화
 
 팀원들의 소통 지연과 인프라 파편화 상황 속에서, 데이터베이스 설계 리더십을 발휘하여 개발 병목을 돌파했습니다.
 
 * **파편화된 ERD 단일화 및 통합 제어**: 모듈 4 재정비 중 팀원이 요구사항을 임의로 반영해 ERD 버전을 무분별하게 새로 파편화시키는 리스크 포착. 슬랙 논의의 한계를 인지하고 직접 구두 소통을 주도하여 모든 요구사항을 통합한 모듈 4 최종본 ERD로 단일화 완료 후 파편화된 구버전은 과감히 폐기 처리.
 * **자발적 DDL 수립**: 팀원들의 무분별한 수정에도 ERD와 하나하나 비교하여 DDL 구문 정합성을 맞추기 위해 노력함.
+
+<details>
+<summary><b>📐 모듈 4 최종 통합본 ERD 설계도 보기 (클릭)</b></summary>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/프로젝트_최종_ERD_파일명.png" width="90%" alt="모듈4 최종 ERD"><br>
+  <sub>▲ 모듈 4 최종 ERD: 파편화된 테이블 구조를 단일화하고 다대다 채팅 인프라를 수용하도록 직접 리드한 데이터 모델링</sub>
+</p>
+</details>
 
 ---
 
@@ -157,11 +165,11 @@
   <b>[친구 도메인 벌크 통합 성공]</b><br>
   <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4FriendPerfAfter-1(SQL, log).png" width="90%"><br><br>
   <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4FriendPerfAfter-2(SQL, log).png" width="90%"><br><br>
+   <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4Friend3Message1PerfAfter(SQL, log).png" width="90%"><br><br>
   <hr style="border: 1px dashed #ccc;"><br>
   <b>[메시지 및 알림 O(1) 인메모리 매핑 완결]</b><br>
-  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4FriendPerfAfter-1(SQL, log).png" width="90%"><br><br>
-  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4Friend2Message1PerfAfter(SQL, log).png" width="90%"><br><br>
-  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/모듈4 개선후-알림2(SQL, 로그 기반).png" width="90%">
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4Message2Noti1PerfAfter(SQL, log).png" width="90%"><br><br>
+  <img src="https://raw.githubusercontent.com/seojeongrim-tech/seojeongrim-tech.github.io/main/module4/images/module4Noti2PerfAfter(SQL, log).png" width="90%"><br><br>
 </p>
 </details>
 
